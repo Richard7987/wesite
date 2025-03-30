@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v6.1.1...main)
 
+## [v6.2.0](https://codeberg.org/daudix/duckquill/compare/v6.1.1...v6.2.0) - 2025-03-30
+
 ### Added
 
 - Add ability to disable share preview card altogether by setting `config.extra.card` to `false` (#122).
@@ -28,13 +30,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Remove `extra.fix_contrast` and `extra.fix_contrast_dark` config/page/section variables in favor of automatic contrast color picking (#43).
 
-## [v6.1.1](https://codeberg.org/daudix/duckquill/compare/v6.1.0...v6.1.1)
+## [v6.1.1](https://codeberg.org/daudix/duckquill/compare/v6.1.0...v6.1.1) - 2024-12-01
 
 ### Fixed
 
 - Fix translation of table of contents heading.
 
-## [v6.1.0](https://codeberg.org/daudix/duckquill/compare/v6.0.0...v6.1.0)
+## [v6.1.0](https://codeberg.org/daudix/duckquill/compare/v6.0.0...v6.1.0) - 2024-12-01
 
 ### Added
 
@@ -51,7 +53,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix navbar not scrolling with content on mobile (#109).
 
-## [6.0.0](https://codeberg.org/daudix/duckquill/compare/v5.4.0...v6.0.0)
+## [6.0.0](https://codeberg.org/daudix/duckquill/compare/v5.4.0...v6.0.0) - 2024-11-03
 
 ### Added
 
@@ -106,7 +108,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **[BREAKING]** Remove `container` class in favor of styling the `main` element directly.
 - Remove `inline-button` class and instead apply button styles by default.
 
-## [5.4.0](https://codeberg.org/daudix/duckquill/compare/v5.3.2...v5.4.0)
+## [5.4.0](https://codeberg.org/daudix/duckquill/compare/v5.3.2...v5.4.0) - 2024-10-06
 
 ### Added
 
@@ -127,13 +129,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Move quick navigation buttons to the top on mobile.
 - Return some `-webkit-` prefixes for wider compatibility.
 
-## [5.3.2](https://codeberg.org/daudix/duckquill/compare/v5.3.1...v5.3.2)
+## [5.3.2](https://codeberg.org/daudix/duckquill/compare/v5.3.1...v5.3.2) - 2024-10-02
 
 ### Fixed
 
 - Fix navbar blur covering the entire page on mobile (#93).
 
-## [5.3.1](https://codeberg.org/daudix/duckquill/compare/v5.3.0...v5.3.1)
+## [5.3.1](https://codeberg.org/daudix/duckquill/compare/v5.3.0...v5.3.1) - 2024-09-30
 
 ### Changed
 
@@ -144,7 +146,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix backdrop blur of dropdowns and search container in Chrome (#77 and #91).
 - Fix height of search bar in Chrome.
 
-## [5.3.0](https://codeberg.org/daudix/duckquill/compare/v5.2.0...v5.3.0)
+## [5.3.0](https://codeberg.org/daudix/duckquill/compare/v5.2.0...v5.3.0) - 2024-09-29
 
 ### Added
 
@@ -163,7 +165,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix height of "Skip to Main Content" button.
 - Fix various RTL issues (broken toggles, article list arrow, unmirrored icons).
 
-## [5.2.0](https://codeberg.org/daudix/duckquill/compare/v5.1.0...v5.2.0)
+## [5.2.0](https://codeberg.org/daudix/duckquill/compare/v5.1.0...v5.2.0) - 2024-09-25
 
 ### Added
 
@@ -189,7 +191,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix spacing between article heading and description in article list if badge is present.
 
-## [5.1.0](https://codeberg.org/daudix/duckquill/compare/v5.0.0...v5.1.0)
+## [5.1.0](https://codeberg.org/daudix/duckquill/compare/v5.0.0...v5.1.0) - 2024-09-20
 
 ### Added
 
@@ -205,7 +207,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Simplify prev/next post nav styles.
 - Use decimals instead of percents (again).
 
-## [5.0.0](https://codeberg.org/daudix/duckquill/compare/v4.8.0...v5.0.0)
+## [5.0.0](https://codeberg.org/daudix/duckquill/compare/v4.8.0...v5.0.0) - 2024-09-18
 
 ### Added
 
@@ -296,7 +298,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix videos and iframes having rounded corners and edge highlight in fullscreen.
 - Load auto-menu-close script if navbar menus are present.
 
-## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0)
+## [4.8.0](https://codeberg.org/daudix/duckquill/compare/v4.7.1...v4.8.0) - 2024-08-29
 
 ### Added
 
