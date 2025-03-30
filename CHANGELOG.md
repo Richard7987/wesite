@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add ability to disable share preview card altogether by setting `config.extra.card` to `false` (#122).
+- Add ability to turn on "go to top" button on regular pages by setting `page.extra.go_to_top` or `section.extra.go_to_top` to `true` (#115).
 - Add French translation (#113).
 - Provide a way to subscribe to the tag feed (#104).
 
@@ -20,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fix build failing if social sharing button is enabled and page is missing a description (#114).
+- Fix build failing if taxonomies in config are set to anything other than "tags" (#126).
 
 ### Removed
 

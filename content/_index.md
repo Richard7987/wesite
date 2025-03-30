@@ -110,6 +110,7 @@ Configuration variables from `config.toml` that can be set/overriden per page/se
 - `toc_inline`: Whether to render inline table of contents at the top of all pages, in addition to floating quick navigation buttons.
 - `toc_ordered`: Whether to use numbered (ordered) list for table of contents.
 - `toc_sidebar`: Whether to display table of contents as a sidebar (useful for long pages).
+- `card`: When set to `false` disables share preview cards globally.
 
 Other variables:
 
@@ -119,6 +120,7 @@ Other variables:
 - `archive`: Displays an archived message.
 - `trigger`: Displays a trigger warning message.
 - `disclaimer`: Displays a disclaimer message.
+- `go_to_top`: Displays a "go to top" button.
 
 ### Blog post specific:
 
