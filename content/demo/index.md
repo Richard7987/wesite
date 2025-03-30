@@ -1,6 +1,7 @@
 +++
 title = "Demo Page"
 [extra]
+go_to_top = true
 styles = ["demo/demo.css"]
 scripts = ["demo/demo.js"]
 katex = true
