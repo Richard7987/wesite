@@ -178,6 +178,8 @@ csp = [
 	{ directive = "base-uri", domains = ["'none'"] },
 	{ directive = "form-action", domains = ["'none'"] }
 ]
+# Uncomment this to disable the card displayed in share previews
+# card = false
 
 [extra.nav]
 # Whether to automatically hide nav when not hovered or focused
