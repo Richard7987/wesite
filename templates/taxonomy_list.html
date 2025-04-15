@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- set number_of_tags = terms | length -%}
+{%- set number_of_terms = terms | length -%}
 {%- set taxon_name = taxonomy.name -%}
 <h1>{{- macros_translate::translate(key="tags_title", default="$TAXON", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) -}}</h1>
 
 <p>
-	<small>{{- macros_translate::translate(key="tags", number=number_of_tags, default="$NUMBER $TAXON", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) -}}</small>
+	<small>{{- macros_translate::translate(key="tags", number=number_of_terms, default="$NUMBER $TAXON", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) -}}</small>
 </p>
 
 <ul class="tags">
