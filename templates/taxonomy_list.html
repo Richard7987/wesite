@@ -2,7 +2,7 @@
 
 {% block content %}
 {%- set number_of_terms = terms | length -%}
-{%- set taxon_name = taxonomy -%}
+{%- set taxon_name = config.name -%}
 <h1>{{- macros_translate::translate(key="tags_title", default="$TAXON", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) -}}</h1>
 
 <p>
