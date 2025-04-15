@@ -5,16 +5,17 @@
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set number_of_posts = term.pages | length -%}
 
+{%- set taxon_name = "taxonomy.name" -%}
 {%- set term_name = "“" ~ term.name ~ "”" -%}
 <h1>
-	{{- macros_translate::translate(key="posts_with_tag", default="Posts with tag $TAG", language_strings=language_strings) | replace(from="$TAG", to=term_name) -}}
+	{{- macros_translate::translate(key="posts_with_tag", default="Posts with $TAXON $TERM", language_strings=language_strings) | replace (from="$TAXON", to=taxon_name) | replace(from="$TERM", to=term_name) -}}
 	<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a>
 </h1>
 
 <p>
 	<small>
 		<a href="{{ get_url(path='tags', lang=lang) }}">
-			{{ macros_translate::translate(key="all_tags", default="See all tags", language_strings=language_strings) }}
+			{{ macros_translate::translate(key="all_tags", default="See all $TAXON", language_strings=language_strings) | replace (from="$TAXON", to=taxon_name) }}
 		</a>
 		<br />
 		{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
