@@ -5,7 +5,7 @@
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set number_of_posts = term.pages | length -%}
 
-{%- set taxon_name = taxonomy.name -%}
+{%- set taxon_name = taxonomy -%}
 {%- set term_name = "“" ~ term.name ~ "”" -%}
 <h1>
 	{{- macros_translate::translate(key="posts_with_tag", default="Posts with $TAXON $TERM", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) | replace(from="$TERM", to=term_name) -}}

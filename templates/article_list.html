@@ -33,7 +33,7 @@
 <p>
 	<small>
 		{%- if config.taxonomies | length > 0 -%}
-		    {%- set taxon_name = taxonomy.name -%}
+		    {%- set taxon_name = taxonomy -%}
 			<a href="{{- get_url(path='$TAXON', lang=lang) | replace(from="$TAXON", to=taxon_name) -}}">
 				{{- macros_translate::translate(key="filter_by_tag", default="Filter by $TAXON", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) -}}
 			</a>
