@@ -15,7 +15,7 @@
 <p>
 	<small>
 		<a href="{{ get_url(path='tags', lang=lang) }}">
-			{{ macros_translate::translate(key="all_tags", default="See all $TAXON", language_strings=language_strings) | replace (from="$TAXON", to=taxon_name) }}
+			{{- macros_translate::translate(key="all_tags", default="See all $TAXON", language_strings=language_strings) | replace (from="$TAXON", to=taxon_name) -}}
 		</a>
 		<br />
 		{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
