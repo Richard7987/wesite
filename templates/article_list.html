@@ -33,11 +33,13 @@
 <p>
 	<small>
 		{%- if config.taxonomies | length > 0 -%}
-		    {%- set taxon_name = config.taxonomies.name -%}
-			<a href="{{- get_url(path='$TAXON', lang=lang) | replace(from="$TAXON", to=taxon_name) -}}">
-				{{- macros_translate::translate(key="filter_by_tag", default="Filter by $TAXON", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) -}}
-			</a>
-			<br />
+		    {%- for taxon in config.taxonomies -%}
+		        {%- set taxon_name = taxonomy.name -%}
+			    <a href="{{- get_url(path='$TAXON', lang=lang) | replace(from="$TAXON", to=taxon_name) -}}">
+				    {{- macros_translate::translate(key="filter_by_tag", default="Filter by $TAXON", language_strings=language_strings) | replace(from="$TAXON", to=taxon_name) -}}
+			    </a>
+			    <br />
+			{%- endfor %}
 		{%- endif %}
 		{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts in total", language_strings=language_strings) }}
 	</small>
