@@ -1,7 +1,11 @@
 {# Taken from https://github.com/welpo/tabi/blob/69713c973c11d7646c8fe56476261d96cc1978d8/templates/partials/title.html #}
 
 {#- Setup -#}
-{%- set suffix = config.title | safe -%}
+{%- if config.title -%}
+	{%- set suffix = config.title | safe -%}
+{%- else -%}
+	{{- throw(message='Title has not been set in config.toml, Please set one.') -}}
+{%- endif -%}
 {%- set custom_separator = config.extra.title_separator | default(value="-") -%}
 {%- set separator = " " ~ custom_separator ~ " " -%}
 
