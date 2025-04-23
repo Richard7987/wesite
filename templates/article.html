@@ -62,10 +62,12 @@
 		{%- if page.taxonomies -%}
 			{%- for name, taxon in page.taxonomies %}
 				<ul class="tags">
-					{%-for item in taxon -%}
-						<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
+					<a class="tag" href="{{- get_url(path='$TAXON', lang=lang) | replace(from="$TAXON", to=name) | lower -}}">{{ name }}:</a>
+					{%- for item in taxon -%}
+					    <li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
 					{%- endfor %}
 				</ul>
+				<br />
 			{%- endfor -%}
 		{%- endif %}
 	</div>
