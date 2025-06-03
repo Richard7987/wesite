@@ -10,9 +10,11 @@
 	{%- set term_name = "“" ~ term.name ~ "”" -%}
 	<h1>
 		{{- macros_translate::translate(key='posts_with_taxon', default='Posts with $TAXON $TERM', language_strings=language_strings) | replace(from="$TAXON", to=taxon_name_i18n) | replace(from="$TERM", to=term_name) -}}
+		{% if taxonomy.feed %}
 		<a href="{{ current_url ~ 'atom.xml' }}">
 			<i class="icon feed"></i>
 		</a>
+		{% endif %}
 	</h1>
 
 	<p>
