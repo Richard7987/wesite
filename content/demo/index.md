@@ -87,6 +87,21 @@ pre table td:nth-of-type(1) {
 }
 ```
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
 ***
 
 ## Extra
@@ -114,6 +129,14 @@ Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentati
 #### Alerts
 
 [GitHub-style](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) alerts. Simply wrap the text of desired alert inside the shortcode to get the desired look.
+
+> [!NOTE]
+> As of version 0.21.0, Zola supports GitHub flavored alerts natively, without this shortcode. It can be enabled by adding the following to `config.toml`:
+>
+> ```toml
+> [markdown]
+> github_alerts = true
+> ```
 
 Available alert types:
 

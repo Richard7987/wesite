@@ -33,6 +33,7 @@ highlight_themes_css = [
 ]
 smart_punctuation = true
 bottom_footnotes = true
+github_alerts = true
 
 [search]
 # index_format = "elasticlunr_json"

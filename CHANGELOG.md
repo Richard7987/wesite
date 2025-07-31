@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://codeberg.org/daudix/duckquill/compare/v6.3.0...main)
 
+- Add support for GitHub-style alerts introduced in Zola 0.21.1 (#175).
+
 ## [v6.3.0](https://codeberg.org/daudix/duckquill/compare/v6.2.0...v6.3.0) - 2025-04-19
 
 ### Added
