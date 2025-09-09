@@ -141,6 +141,7 @@ show_repo = true
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
+	{ url = "@/photos/_index.md", name = "Album" },
 	{ url = "@/demo/index.md", name = "Demo" },
 	{ url = "@/about/_index.md", name = "About me" }
 ]
