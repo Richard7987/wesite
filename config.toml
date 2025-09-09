@@ -39,11 +39,11 @@ index_format = "fuse_json"
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 #accent_color = "#ff7800"
-accent_color = "#0077ff"
+accent_color = "#ffb300"
 # Ditto but for the dark theme.
 # If not set regular variant will be used.
 #accent_color_dark = "#ffa348"
-accent_color_dark = "#3399ff"
+accent_color_dark = "#2c2c2c"
 # Whether to use fonts bundled with Duckquill instead of system ones.
 # Keep in mind that it also changes the style of headings.
 #
@@ -145,7 +145,7 @@ links = [
 	{ url = "@/mods/index.md", name = "Mods" }
 ]
 
-#[extra.footer]
+[extra.footer]
 # Links used in the footer.
 # Same as the nav ones.
 links = [
