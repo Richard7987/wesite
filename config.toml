@@ -9,7 +9,7 @@ generate_feeds = true
 # other feeds will still be available in page's head.
 feed_filenames = ["rss.xml", "atom.xml"]
 build_search_index = true
-author = "Duck Quack"
+author = "Alejandro B.E."
 
 # Set to English only
 default_language = "en"
@@ -138,11 +138,9 @@ show_repo = true
 # i.e. "@/blog/_index.md".
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
-	{ name = "Links", menu = [
-		{ url = "@/blog/_index.md", name = "Blog" },
-		{ url = "@/demo/index.md", name = "Demo" },
-		{ url = "@/mods/index.md", name = "Mods" }
-	] },
+	{ url = "@/blog/_index.md", name = "Blog" },
+	{ url = "@/demo/index.md", name = "Demo" },
+	{ url = "@/mods/index.md", name = "Mods" },
 	{ url = "https://daudix.one/coffee/", name = "Coffee" }
 ]
 
