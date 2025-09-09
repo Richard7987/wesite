@@ -43,7 +43,7 @@ accent_color = "#ff7800"
 # Ditto but for the dark theme.
 # If not set regular variant will be used.
 #accent_color_dark = "#ffa348"
-accent_color_dark = "#6a1b9a"
+accent_color_dark = "#ffa348"
 # Whether to use fonts bundled with Duckquill instead of system ones.
 # Keep in mind that it also changes the style of headings.
 #
