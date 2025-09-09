@@ -22,8 +22,6 @@ description = "About me page"
 - **Testing:** Pytest, JUnit, Jest
 - **Other:** Cybersecurity, Self-hosting, Server Management, Automation
 
----
-
 ## 🧠 Projects
 
 ### Autonomous AI-Powered Drone
@@ -35,33 +33,26 @@ Configured a 24/7 home server with privacy-focused, self-hosted services and har
 ### Intelligent Cultivation System *(In Progress)*
 Modular, AI-driven mushroom cultivation system with automated environmental controls.
 
----
-
 ## 🎓 Education
 
 **BSc in Applied Physics**  
-Autonomous University of Hidalgo State (UAEH)  
-`2023 – 2027 (expected)`
+Autonomous University of Hidalgo State (UAEH)
 
 **Programming Certificate**  
 CBTIS 199  
 Fundamentals and practical programming knowledge.
-
----
 
 ## 📅 Conferences
 
 - **SAPinsider Vegas 2024** — Workshops on SAP technologies and enterprise trends.
 - **CES Las Vegas** — Exposure to emerging technologies and industry networking.
 
----
 
 ## 🌐 Languages
 
 - **Spanish:** ★★★★★ Native
 - **English:** ★★★★☆ Professional
 
----
 
 ## 💡 Interests
 
