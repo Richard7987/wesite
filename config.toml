@@ -39,11 +39,11 @@ index_format = "fuse_json"
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 #accent_color = "#ff7800"
-accent_color = "#ffb300"
+accent_color = "#ff7800"
 # Ditto but for the dark theme.
 # If not set regular variant will be used.
 #accent_color_dark = "#ffa348"
-accent_color_dark = "#ffb300"
+accent_color_dark = "#6a1b9a"
 # Whether to use fonts bundled with Duckquill instead of system ones.
 # Keep in mind that it also changes the style of headings.
 #
