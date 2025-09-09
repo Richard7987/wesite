@@ -1,0 +1,104 @@
+{%- if paginator.pages -%}
+	{%- set pages = paginator.pages -%}
+{%- elif section.pages -%}
+	{%- set pages = section.pages -%}
+{%- elif term.pages -%}
+	{%- set pages = term.pages -%}
+{%- else -%}
+	{%- set pages = [] -%}
+{%- endif -%}
+
+<div id="photo-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+	{%- for page in pages %}
+		{%- if page.draft -%}
+			{%- set article_type = "draft" -%}
+			{%- set article_string = macros_translate::translate(key="drafted", default="Drafted", language_strings=language_strings) -%}
+		{%- elif page.extra.archive -%}
+			{%- set article_type = "archive" -%}
+			{%- set article_string = macros_translate::translate(key="archived", default="Archived", language_strings=language_strings) -%}
+		{%- elif page.extra.featured -%}
+			{%- set article_type = "featured" -%}
+			{%- set article_string = macros_translate::translate(key="featured", default="Featured", language_strings=language_strings) -%}
+		{%- endif -%}
+		
+		{# Try to find the first image in the post content or use extra.cover_image #}
+		{%- set cover_image = false -%}
+		{%- if page.extra.cover_image -%}
+			{%- if page.extra.cover_image is starting_with("/") -%}
+				{%- set cover_image = page.extra.cover_image | trim_start_matches(pat="/") -%}
+			{%- else -%}
+				{%- set cover_image = page.colocated_path ~ page.extra.cover_image -%}
+			{%- endif -%}
+		{%- elif page.extra.banner -%}
+			{%- if page.extra.banner is starting_with("/") -%}
+				{%- set cover_image = page.extra.banner | trim_start_matches(pat="/") -%}
+			{%- else -%}
+				{%- set cover_image = page.colocated_path ~ page.extra.banner -%}
+			{%- endif -%}
+		{%- endif -%}
+		
+		<article class="photo-album-card" {% if article_type %}data-type="{{ article_type }}"{% endif %} style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s;">
+			<a href="{{ page.permalink | safe }}" style="text-decoration: none; color: inherit; display: block;">
+				{%- if cover_image -%}
+					{%- set thumbnail = resize_image(path=cover_image, width=400, height=300, op="fill", format="webp") -%}
+					<div class="photo-thumbnail" style="width: 100%; height: 200px; background-image: url('{{ thumbnail.url }}'); background-size: cover; background-position: center; position: relative;">
+						{% if article_type %}
+							<span class="badge" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+								<i class="icon"></i>
+								{{- article_string -}}
+							</span>
+						{%- endif %}
+					</div>
+				{%- else -%}
+					<div class="photo-placeholder" style="width: 100%; height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+						{% if article_type %}
+							<span class="badge" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+								<i class="icon"></i>
+								{{- article_string -}}
+							</span>
+						{%- endif %}
+						<i class="icon" style="font-size: 3rem; color: rgba(255,255,255,0.7);">📸</i>
+					</div>
+				{%- endif -%}
+				
+				<div class="album-info" style="padding: 1rem;">
+					<h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; line-height: 1.3;">{{ page.title }}</h3>
+					{%- if page.description %}
+						<p style="margin: 0 0 0.5rem 0; color: #666; font-size: 0.9rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ page.description | striptags }}</p>
+					{%- endif %}
+					{%- if page.date -%}
+						<div class="album-date" style="margin-top: 0.5rem;">
+							<small style="color: #888; font-size: 0.8rem;">
+								<time datetime="{{ page.date | date(format='%+') }}" pubdate>
+									{{- page.date | date(format=date_format, locale=date_locale) -}}
+								</time>
+								{%- if page.authors -%}
+									<span> {{ config.extra.separator | default(value="•") }} {% include "partials/authors.html" -%}</span>
+								{%- endif -%}
+							</small>
+						</div>
+					{%- endif -%}
+					
+					{%- if page.taxonomies -%}
+						<div class="album-tags" style="margin-top: 0.5rem;">
+							{%- for name, taxon in page.taxonomies %}
+								<small style="font-size: 0.8rem;">
+									{%- for item in taxon -%}
+										<span style="display: inline-block; background: #f0f0f0; color: #666; padding: 2px 6px; border-radius: 3px; margin-right: 4px; margin-top: 2px;">#{{ item }}</span>
+									{%- endfor %}
+								</small>
+							{%- endfor -%}
+						</div>
+					{%- endif %}
+				</div>
+			</a>
+		</article>
+	{%- endfor %}
+</div>
+
+<style>
+.photo-album-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+</style>

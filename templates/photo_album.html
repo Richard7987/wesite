@@ -1,0 +1,102 @@
+{% extends "article.html" %}
+
+{% block content %}
+{{ super() }}
+
+{# If this is a photo album, add custom styling for images #}
+<style>
+/* Photo album specific styles */
+.photo-album-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.photo-album-container img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo gallery grid for multiple images in one post */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .photo-grid img {
+        height: auto;
+    }
+}
+</style>
+
+<script>
+// Add click-to-zoom functionality for images
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('article img');
+    
+    images.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            // Create overlay
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.9);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                cursor: pointer;
+            `;
+            
+            // Create enlarged image
+            const enlargedImg = document.createElement('img');
+            enlargedImg.src = this.src;
+            enlargedImg.style.cssText = `
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                border-radius: 8px;
+            `;
+            
+            overlay.appendChild(enlargedImg);
+            document.body.appendChild(overlay);
+            
+            // Close on click
+            overlay.addEventListener('click', function() {
+                document.body.removeChild(overlay);
+            });
+            
+            // Close on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && document.body.contains(overlay)) {
+                    document.body.removeChild(overlay);
+                }
+            });
+        });
+    });
+});
+</script>
+{% endblock content %}
