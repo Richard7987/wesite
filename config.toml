@@ -183,9 +183,9 @@ show_source = false
 # the needed rel="me" link is set in the head based on these.
 [extra.comments]
 # Your Mastodon API host; instance that you have an account on.
-host = "vmst.io"
+host = "masto.es"
 # Your Mastodon username; used to determine who the original poster is.
-user = "daudix"
+user = "negasonic69"
 # Whether to show the QR code to Mastodon post
 show_qr = true
 
@@ -196,7 +196,8 @@ show_qr = true
 # host = "YOUR_SERVER"
 #
 # Your GoatCounter username
-user = "duckquill"
+user = "nezzontli"
+# host = "nezzontli.goatcounter.com"
 
 [extra.debug]
 # Display outlines around all elements for debugging purposes
