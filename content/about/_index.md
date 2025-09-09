@@ -48,8 +48,8 @@ Fundamentals and practical programming knowledge.
 
 ## 🌐 Languages
 
- - **Spanish:** Native <progress value="6" max="6"></progress> Native
-- **English:** Native <progress value="3" max="6"></progress> Professional
+ - **Spanish:** Native <progress value="6" max="6"></progress> 
+- **English:** Native <progress value="3" max="6"></progress> 
 
 
 ## 💡 Interests
