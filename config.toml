@@ -38,10 +38,12 @@ index_format = "fuse_json"
 #
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-accent_color = "#ff7800"
+#accent_color = "#ff7800"
+accent_color = "#0077ff"
 # Ditto but for the dark theme.
 # If not set regular variant will be used.
-accent_color_dark = "#ffa348"
+#accent_color_dark = "#ffa348"
+accent_color_dark = "#3399ff"
 # Whether to use fonts bundled with Duckquill instead of system ones.
 # Keep in mind that it also changes the style of headings.
 #
@@ -165,7 +167,7 @@ socials = [
 # Whether to show "© Title, YEAR"
 show_copyright = true
 # Whether to show "Powered by Zola and Duckquill"
-show_powered_by = false
+show_powered_by = true
 # Whether to show link to website source
 show_source = false
 # Custom copyright text
