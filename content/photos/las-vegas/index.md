@@ -12,7 +12,7 @@ cover_image = "/images/lasvegas/240713000078230003.jpg"
 
 My recent trip to Las Vegas was absolutely incredible! From the dazzling lights of the Strip to the amazing architecture and vibrant atmosphere, every moment was photo-worthy.
 
-![Las Vegas](../../../static/images/lasvegas/240713000078230003.jpg)
+![Las Vegas](/images/lasvegas/240713000078230003.jpg)
 *The iconic Las Vegas skyline*
 
 ## The Strip Experience
