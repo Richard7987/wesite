@@ -142,7 +142,7 @@ show_repo = true
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/demo/index.md", name = "Demo" },
-	{ url = "@\about/index.md", name = "About me" }
+	{ url = "@/about/index.md", name = "About me" }
 ]
 
 [extra.footer]
