@@ -1,11 +1,9 @@
 +++
-title = "About me"
+title = "About me:"
 description = "About me page"
 +++
 
----
-
-# Alejandro Bernal Estrada
+## I’m Alejandro Bernal Estrada
 
 📖 Passionate about ethical technology, free knowledge, and resilient systems.
 
@@ -50,8 +48,8 @@ Fundamentals and practical programming knowledge.
 
 ## 🌐 Languages
 
-- **Spanish:** ★★★★★ Native
-- **English:** ★★★★☆ Professional
+ - **Spanish:** <progress value="6" max="6"></progress> Native
+- **English:** <progress value="3" max="6"></progress> Professional
 
 
 ## 💡 Interests
