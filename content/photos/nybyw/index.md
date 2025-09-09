@@ -5,7 +5,7 @@ description = "A collection of black and white photos from my trip to New York C
 [taxonomies]
 tags = ["travel", "photography", "new york", "black and white"]
 [extra]
-cover_image = "/images/nybyw/240105000078230001.jpg"
+cover_image = "/images/nybyw/000045230003.jpg"
 +++
 
 # New York in Black and White
