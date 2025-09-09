@@ -140,19 +140,18 @@ show_repo = true
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/demo/index.md", name = "Demo" },
-	{ url = "@/mods/index.md", name = "Mods" },
-	{ url = "https://daudix.one/coffee/", name = "Coffee" }
+	{ url = "@/mods/index.md", name = "Mods" }
 ]
 
-[extra.footer]
+#[extra.footer]
 # Links used in the footer.
 # Same as the nav ones.
-links = [
-	{ url = "@/blog/_index.md", name = "Blog" },
-	{ url = "@/demo/index.md", name = "Demo" },
-	{ url = "@/mods/index.md", name = "Mods" },
-	{ url = "https://daudix.one/coffee/", name = "Coffee" }
-]
+#links = [
+#	{ url = "@/blog/_index.md", name = "Blog" },
+#	{ url = "@/demo/index.md", name = "Demo" },
+#	{ url = "@/mods/index.md", name = "Mods" },
+#	{ url = "https://daudix.one/coffee/", name = "Coffee" }
+#]
 # Social links in the footer.
 # Any URL-encoded SVG can be used as an icon.
 # https://simpleicons.org is the recommended source of SVG icons.
