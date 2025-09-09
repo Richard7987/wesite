@@ -1,5 +1,5 @@
 title = "Nezzontli"
-base_url = "https://nezzontli.netlify.app"
+base_url = "https://nezzontli.xyz"
 description = "Opinionated, modern, pretty, and clean Zola theme."
 
 compile_sass = true
@@ -142,7 +142,7 @@ show_repo = true
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/demo/index.md", name = "Demo" },
-	{ url = "@/mods/index.md", name = "Mods" }
+	{ url = "@\about/index.md", name = "About me" }
 ]
 
 [extra.footer]
