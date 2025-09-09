@@ -3,7 +3,7 @@ title = "New York in Black and White"
 date = 2024-01-05
 description = "A collection of black and white photos from my trip to New York City."
 [taxonomies]
-tags = ["travel", "photography", "new york", "black and white"]
+tags = ["travel", "new york", "black and white"]
 [extra]
 cover_image = "/images/nybyw/000045230003.jpg"
 +++

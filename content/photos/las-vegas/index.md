@@ -3,7 +3,7 @@ title = "Las Vegas Trip"
 date = 2024-07-13
 description = "Amazing photos from my trip to Las Vegas - the lights, the energy, and the unforgettable moments"
 [taxonomies]
-tags = ["travel", "photography"]
+tags = ["travel", "Las Vegas"]
 [extra]
 cover_image = "/images/lasvegas/240713000078230003.jpg"
 +++
