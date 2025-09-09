@@ -3,7 +3,7 @@ title = "Las Vegas Trip"
 date = 2024-07-13
 description = "Amazing photos from my trip to Las Vegas - the lights, the energy, and the unforgettable moments"
 [taxonomies]
-tags = ["travel", "las-vegas", "photography", "city", "lights"]
+tags = ["travel", "photography"]
 [extra]
 cover_image = "/images/lasvegas/240713000078230003.jpg"
 +++
@@ -21,10 +21,10 @@ Walking down the Las Vegas Strip is like entering a different world. The energy 
 
 <div class="photo-grid">
 
-![Vegas Photo 1](../../../static/images/lasvegas/240713000078230004.jpg)
-![Vegas Photo 2](../../../static/images/lasvegas/240713000078230005.jpg)
-![Vegas Photo 3](../../../static/images/lasvegas/240713000078230006.jpg)
-![Vegas Photo 4](../../../static/images/lasvegas/240713000078230007.jpg)
+![Vegas Photo 1](/images/lasvegas/240713000078230004.jpg)
+![Vegas Photo 2](/images/lasvegas/240713000078230005.jpg)
+![Vegas Photo 3](/images/lasvegas/240713000078230006.jpg)
+![Vegas Photo 4](/images/lasvegas/240713000078230007.jpg)
 
 </div>
 
@@ -32,16 +32,15 @@ Walking down the Las Vegas Strip is like entering a different world. The energy 
 
 <div class="photo-grid">
 
-![Vegas Photo 5](../../../static/images/lasvegas/240713000078230008.jpg)
-![Vegas Photo 6](../../../static/images/lasvegas/240713000078230009.jpg)
+![Vegas Photo 5](/images/lasvegas/240713000078230008.jpg)
+![Vegas Photo 6](/images/lasvegas/240713000078230009.jpg)
 
 </div>
 
 ## Camera Details
 
-- Camera: Digital Camera
+- Camera: Analog Camera
 - Date: July 13, 2024
 - Location: Las Vegas, Nevada
-- Weather: Perfect clear skies
 
 This trip to Las Vegas was unforgettable. The combination of architecture, lights, and atmosphere made it a photographer's paradise!
