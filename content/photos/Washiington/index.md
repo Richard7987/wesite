@@ -5,14 +5,14 @@ description = "A collection of black and white photos from my trip to Washington
 [taxonomies]
 tags = ["travel", "Washington DC"]
 [extra]
-cover_image = "/images/Washiington/250107000094200001.jpg"
+cover_image = "/images/Washiington/250107000094200016.jpg"
 +++
 
 # Washington DC in Black and White
 
 Here are some photos from my recent trip to Washington DC. I decided to shoot in black and white to capture the classic architecture and monuments.
 
-![Washington DC](/images/Washiington/250107000094200001.jpg)
+![Washington DC](/images/Washiington/250107000094200016.jpg)
 *A classic view of the city.*
 
 ## More Photos
@@ -26,7 +26,7 @@ Here are some photos from my recent trip to Washington DC. I decided to shoot in
 ![Washington DC Photo 7](/images/Washiington/250107000094200010.jpg)  
 ![Washington DC Photo 8](/images/Washiington/250107000094200014.jpg)  
 ![Washington DC Photo 9](/images/Washiington/250107000094200015.jpg)  
-![Washington DC Photo 10](/images/Washiington/250107000094200016.jpg)  
+![Washington DC Photo 10](/images/Washiington/250107000094200001.jpg)  
 ![Washington DC Photo 11](/images/Washiington/250107000094200020.jpg)  
 ![Washington DC Photo 12](/images/Washiington/250107000094200021.jpg)  
 ![Washington DC Photo 13](/images/Washiington/250107000094200022.jpg)  
