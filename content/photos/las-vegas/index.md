@@ -12,30 +12,22 @@ cover_image = "/images/lasvegas/240713000078230003.jpg"
 
 My recent trip to Las Vegas was absolutely incredible! From the dazzling lights of the Strip to the amazing architecture and vibrant atmosphere, every moment was photo-worthy.
 
-{![Las Vegas](/images/lasvegas/240713000078230003.jpg)}
+![Las Vegas](/images/lasvegas/240713000078230003.jpg)
 *The iconic Las Vegas skyline*
 
 ## The Strip Experience
 
 Walking down the Las Vegas Strip is like entering a different world. The energy is electric, and there's something amazing to capture at every turn.
 
-<div class="photo-grid">
-
-[![Vegas Photo 1](/images/lasvegas/240713000078230004.jpg)]
-[![Vegas Photo 2](/images/lasvegas/240713000078230005.jpg)]
-[![Vegas Photo 3](/images/lasvegas/240713000078230006.jpg)]
-[![Vegas Photo 4](/images/lasvegas/240713000078230007.jpg)]
-
-</div>
+![Vegas Photo 1](/images/lasvegas/240713000078230004.jpg)
+![Vegas Photo 2](/images/lasvegas/240713000078230005.jpg)
+![Vegas Photo 3](/images/lasvegas/240713000078230006.jpg)
+![Vegas Photo 4](/images/lasvegas/240713000078230007.jpg)
 
 ## More Highlights
 
-<div class="photo-grid">
-
-[![Vegas Photo 5](/images/lasvegas/240713000078230008.jpg)]
-[![Vegas Photo 6](/images/lasvegas/240713000078230009.jpg)]
-
-</div>
+![Vegas Photo 5](/images/lasvegas/240713000078230008.jpg)
+![Vegas Photo 6](/images/lasvegas/240713000078230009.jpg)
 
 ## Camera Details
 
