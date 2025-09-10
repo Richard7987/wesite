@@ -92,3 +92,9 @@ This branch suggests that **divine knowledge is not meant for humans**. That **s
 
 > [!WARNING] Important Consideration  
 > This narrative branch requires a more experimental and abstract approach, with emphasis on building an atmosphere of psychological horror rather than a linear storyline.  
+
+---
+
+{% alert(important=true) %}
+For back to the main blog click here [Do Not Be Afraid - Short Film Concept](@/blog/cortometraje/index.md)
+{% end %}

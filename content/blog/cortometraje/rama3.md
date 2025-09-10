@@ -130,3 +130,9 @@ But on the screen, the YouTuber looks directly at the camera for the first time 
 
 > [!NOTE]  
 > This narrative branch draws inspiration from elements of **Lovecraftian cosmic horror**, combined with the concept of **kenosis** (divine self-emptying) and the tradition of **apocryphal texts**.
+
+---
+
+{% alert(important=true) %}
+For back to the main blog click here [Do Not Be Afraid - Short Film Concept](@/blog/cortometraje/index.md)
+{% end %}

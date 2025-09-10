@@ -73,3 +73,9 @@ tags = ["Idea", "Project", "Branch1"]
 
 > [!NOTE]  
 > This narrative branch ends at an open point, allowing multiple interpretations and possibilities for how the story continues.
+
+---
+
+{% alert(important=true) %}
+For back to the main blog click here [Do Not Be Afraid - Short Film Concept](@/blog/cortometraje/index.md)
+{% end %}
