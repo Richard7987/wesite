@@ -94,6 +94,6 @@ tags = ["Idea", "Project", "drone"]
 ---
 
 {% alert(important=true) %}
-For back to the main blog click here [Do Not Be Afraid - Short Film Concept](@/blog/drone/index.md)
+For back to the main blog click here [Autonomous Drone](@/blog/drone/index.md)
 {% end %}
 
