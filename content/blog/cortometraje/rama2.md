@@ -90,7 +90,7 @@ This branch suggests that **divine knowledge is not meant for humans**. That **s
 - Consider the use of projections for the moving shadow effects
 - Film with wide-angle lenses to subtly distort spaces
 
-> [!WARNING] Important Consideration  
+> [!WARNING] 
 > This narrative branch requires a more experimental and abstract approach, with emphasis on building an atmosphere of psychological horror rather than a linear storyline.  
 
 ---
