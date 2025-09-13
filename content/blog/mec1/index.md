@@ -7,6 +7,10 @@ date = 2025-09-09
 tags = ["Guia", "Mecanica"]
 [extra]
 katex = true
+[extra.comments]
+host = "masto.es"
+user = "negasonic69"
+id = "115195019369232402"
 +++
 ## Diferencia entre una magnitud física escalar y vectorial
 La diferencia entre una magnitud física escalar y vectorial, es la manera en como se transforman bajo un cambio de sistema de referencia.
