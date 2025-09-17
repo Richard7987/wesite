@@ -10,7 +10,6 @@ My personal website.
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
 * [License](#license)
 
 
